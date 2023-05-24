@@ -14,3 +14,4 @@ sources:
       - name: shippers
       - name: suppliers
       - name: territories
+      - name: region
