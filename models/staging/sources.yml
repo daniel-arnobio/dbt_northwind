@@ -10,7 +10,7 @@ sources:
         description: This table lists the orders from ERP Northwind
         columns:
           - name: order_id
-            description: The primary key of table
+            description: '{{ doc("orders_docs") }}'
       - name: customers
       - name: order_details
       - name: products
