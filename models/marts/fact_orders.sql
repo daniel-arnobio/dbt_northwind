@@ -3,10 +3,21 @@ with
         select *
         from {{ ref("dim_customers") }}
     )
-
     , orders as (
         select *
         from {{ ref("dim_orders") }}
+    )
+    , products as (
+        select *
+        from {{ ref("dim_products") }}
+    )
+    , employees as (
+        select *
+        from {{ ref("dim_employees") }}
+    )
+    , suppliers as (
+        select *
+        from {{ ref("dim_suppliers") }}
     )
     , final as (
         select 
