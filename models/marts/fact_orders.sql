@@ -6,11 +6,14 @@ with
 
     , orders as (
         select *
-        from {{ ref("stg_orders") }}
+        from {{ ref("dim_orders") }}
     )
-
-    select 
-        customers.sk_customer
-        , orders.*
-    from orders
-    left join customers on orders.customer_id = customers.customer_id
+    , final as (
+        select 
+            customers.sk_customer
+            , orders.*
+        from orders
+        left join customers on orders.customer_id = customers.customer_id
+    )
+select *
+from final
