@@ -8,3 +8,9 @@ sources:
       - name: orders
       - name: customers
       - name: order_details
+      - name: products
+      - name: categories
+      - name: employees
+      - name: shippers
+      - name: suppliers
+      - name: territories
