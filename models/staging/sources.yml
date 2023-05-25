@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: northwind
+    description: Data from Northwind ERP
+    database: curso-etl-101 
+    schema: erp_northwind
+    tables:
+      - name: orders
+        description: '{{ doc("orders_docs") }}'
+        columns:
+          - name: order_id
+            description: The primary key of table.
+            tests: 
+              - unique
+              - not_null
+      - name: customers
+      - name: order_details
+      - name: products
+      - name: categories
+      - name: employees
+      - name: shippers
+      - name: suppliers
+      - name: territories
+      - name: region
