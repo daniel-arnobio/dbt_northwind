@@ -1,6 +1,6 @@
 {% docs orders_docs %}
 
-This table contains clickstream events from the marketing website.
+This table contains the orders of Norhwind operations.
 
 The events in this table are recorded by [Snowplow](http://github.com/snowplow/snowplow) and piped into the warehouse on an hourly basis. The following pages of the marketing site are tracked:
  - /
